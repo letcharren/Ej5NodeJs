@@ -1,0 +1,443 @@
+:root {
+  --rowNum: 4;
+  --colNum: 5;
+  --gridHeight: 120px;
+}
+
+body {
+  min-height: 100vh;
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-rows: repeat(var(--rowNum), var(--gridHeight));
+  grid-template-columns: repeat(var(--colNum), auto);
+  gap: 5px;
+}
+
+.grid-item {
+  grid-column-start: auto;
+  grid-row-start: auto;
+}
+
+.grid-item:nth-child(0) {
+  background-color: rgba(145, 188, 4, 0.1);
+}
+
+.grid-item:nth-child(1) {
+  background-color: rgba(76, 168, 97, 0.4);
+}
+
+.grid-item:nth-child(2) {
+  background-color: rgba(207, 110, 101, 0.1);
+}
+
+.grid-item:nth-child(3) {
+  background-color: rgba(80, 60, 76, 0.9);
+}
+
+.grid-item:nth-child(4) {
+  background-color: rgba(78, 108, 43, 0.1);
+}
+
+.grid-item:nth-child(5) {
+  background-color: rgba(92, 28, 189, 0.8);
+}
+
+.grid-item:nth-child(6) {
+  background-color: rgba(15, 137, 165, 0.3);
+}
+
+.grid-item:nth-child(7) {
+  background-color: rgba(216, 121, 24, 0.6);
+}
+
+.grid-item:nth-child(8) {
+  background-color: rgba(138, 211, 182, 0.4);
+}
+
+.grid-item:nth-child(9) {
+  background-color: rgba(108, 106, 241, 0.7);
+}
+
+.grid-item:nth-child(10) {
+  background-color: rgba(221, 246, 9, 0.6);
+}
+
+.grid-item:nth-child(11) {
+  background-color: rgba(94, 54, 222, 0.1);
+}
+
+.grid-item:nth-child(12) {
+  background-color: rgba(104, 193, 183, 0.9);
+}
+
+.grid-item:nth-child(13) {
+  background-color: #e3865c;
+}
+
+.grid-item:nth-child(14) {
+  background-color: rgba(253, 134, 27, 0.5);
+}
+
+.grid-item:nth-child(15) {
+  background-color: rgba(89, 252, 193, 0.2);
+}
+
+.grid-item:nth-child(16) {
+  background-color: #fdf426;
+}
+
+.grid-item:nth-child(17) {
+  background-color: rgba(72, 226, 152, 0.4);
+}
+
+.grid-item:nth-child(18) {
+  background-color: rgba(41, 192, 211, 0.3);
+}
+
+.grid-item:nth-child(19) {
+  background-color: #14c4bc;
+}
+
+.grid-item:nth-child(20) {
+  background-color: rgba(87, 60, 243, 0.7);
+}
+
+.grid-item:nth-child(21) {
+  background-color: rgba(17, 39, 194, 0.2);
+}
+
+.grid-item:nth-child(22) {
+  background-color: rgba(204, 72, 45, 0.9);
+}
+
+.grid-item:nth-child(23) {
+  background-color: rgba(237, 133, 125, 0.5);
+}
+
+.grid-item:nth-child(24) {
+  background-color: rgba(142, 121, 39, 0.5);
+}
+
+.grid-item:nth-child(25) {
+  background-color: rgba(94, 220, 124, 0.6);
+}
+
+.grid-item:nth-child(26) {
+  background-color: rgba(213, 128, 232, 0.7);
+}
+
+.grid-item:nth-child(27) {
+  background-color: rgba(27, 135, 135, 0.3);
+}
+
+.grid-item:nth-child(28) {
+  background-color: rgba(122, 75, 229, 0.9);
+}
+
+.grid-item:nth-child(29) {
+  background-color: rgba(156, 120, 81, 0.5);
+}
+
+.grid-item:nth-child(30) {
+  background-color: rgba(93, 70, 210, 0.1);
+}
+
+.grid-item:nth-child(31) {
+  background-color: rgba(236, 111, 94, 0.4);
+}
+
+.grid-item:nth-child(32) {
+  background-color: rgba(28, 234, 16, 0.9);
+}
+
+.grid-item:nth-child(33) {
+  background-color: rgba(58, 99, 251, 0.8);
+}
+
+.grid-item:nth-child(34) {
+  background-color: rgba(201, 186, 137, 0.4);
+}
+
+.grid-item:nth-child(35) {
+  background-color: rgba(38, 56, 253, 0.6);
+}
+
+.grid-item:nth-child(36) {
+  background-color: rgba(4, 97, 179, 0.5);
+}
+
+.grid-item:nth-child(37) {
+  background-color: rgba(30, 171, 239, 0.1);
+}
+
+.grid-item:nth-child(38) {
+  background-color: rgba(93, 193, 181, 0.7);
+}
+
+.grid-item:nth-child(39) {
+  background-color: rgba(189, 116, 101, 0.3);
+}
+
+.grid-item:nth-child(40) {
+  background-color: rgba(184, 170, 68, 0.6);
+}
+
+.grid-item:nth-child(41) {
+  background-color: rgba(182, 153, 220, 0.8);
+}
+
+.grid-item:nth-child(42) {
+  background-color: rgba(137, 148, 63, 0.1);
+}
+
+.grid-item:nth-child(43) {
+  background-color: rgba(212, 80, 195, 0.4);
+}
+
+.grid-item:nth-child(44) {
+  background-color: #8ad94e;
+}
+
+.grid-item:nth-child(45) {
+  background-color: rgba(120, 19, 87, 0.6);
+}
+
+.grid-item:nth-child(46) {
+  background-color: rgba(76, 251, 100, 0.8);
+}
+
+.grid-item:nth-child(47) {
+  background-color: rgba(216, 211, 208, 0.8);
+}
+
+.grid-item:nth-child(48) {
+  background-color: rgba(197, 46, 157, 0.8);
+}
+
+.grid-item:nth-child(49) {
+  background-color: #9b3f6c;
+}
+
+.grid-item:nth-child(50) {
+  background-color: rgba(127, 68, 144, 0.1);
+}
+
+.grid-item:nth-child(51) {
+  background-color: rgba(214, 14, 42, 0.3);
+}
+
+.grid-item:nth-child(52) {
+  background-color: #4c1d4c;
+}
+
+.grid-item:nth-child(53) {
+  background-color: rgba(6, 71, 252, 0.2);
+}
+
+.grid-item:nth-child(54) {
+  background-color: #f27744;
+}
+
+.grid-item:nth-child(55) {
+  background-color: rgba(43, 15, 8, 0.1);
+}
+
+.grid-item:nth-child(56) {
+  background-color: rgba(76, 145, 252, 0.7);
+}
+
+.grid-item:nth-child(57) {
+  background-color: rgba(134, 244, 133, 0.3);
+}
+
+.grid-item:nth-child(58) {
+  background-color: rgba(113, 243, 171, 0.7);
+}
+
+.grid-item:nth-child(59) {
+  background-color: rgba(61, 107, 193, 0.7);
+}
+
+.grid-item:nth-child(60) {
+  background-color: rgba(233, 51, 214, 0.8);
+}
+
+.grid-item:nth-child(61) {
+  background-color: rgba(68, 63, 33, 0.6);
+}
+
+.grid-item:nth-child(62) {
+  background-color: rgba(154, 153, 236, 0.5);
+}
+
+.grid-item:nth-child(63) {
+  background-color: rgba(173, 185, 2, 0.3);
+}
+
+.grid-item:nth-child(64) {
+  background-color: rgba(116, 228, 3, 0.1);
+}
+
+.grid-item:nth-child(65) {
+  background-color: #88b806;
+}
+
+.grid-item:nth-child(66) {
+  background-color: rgba(209, 75, 120, 0.1);
+}
+
+.grid-item:nth-child(67) {
+  background-color: rgba(238, 138, 204, 0.5);
+}
+
+.grid-item:nth-child(68) {
+  background-color: rgba(237, 68, 223, 0.6);
+}
+
+.grid-item:nth-child(69) {
+  background-color: rgba(254, 236, 105, 0.7);
+}
+
+.grid-item:nth-child(70) {
+  background-color: rgba(133, 68, 58, 0.3);
+}
+
+.grid-item:nth-child(71) {
+  background-color: rgba(143, 248, 41, 0.6);
+}
+
+.grid-item:nth-child(72) {
+  background-color: rgba(95, 54, 55, 0.3);
+}
+
+.grid-item:nth-child(73) {
+  background-color: rgba(242, 100, 255, 0.7);
+}
+
+.grid-item:nth-child(74) {
+  background-color: rgba(249, 70, 36, 0.3);
+}
+
+.grid-item:nth-child(75) {
+  background-color: #93605e;
+}
+
+.grid-item:nth-child(76) {
+  background-color: rgba(21, 102, 166, 0.1);
+}
+
+.grid-item:nth-child(77) {
+  background-color: rgba(248, 252, 240, 0.8);
+}
+
+.grid-item:nth-child(78) {
+  background-color: rgba(155, 27, 209, 0.3);
+}
+
+.grid-item:nth-child(79) {
+  background-color: rgba(84, 67, 203, 0.1);
+}
+
+.grid-item:nth-child(80) {
+  background-color: rgba(2, 138, 166, 0.8);
+}
+
+.grid-item:nth-child(81) {
+  background-color: #e83ea9;
+}
+
+.grid-item:nth-child(82) {
+  background-color: rgba(251, 118, 41, 0.4);
+}
+
+.grid-item:nth-child(83) {
+  background-color: rgba(86, 84, 170, 0.5);
+}
+
+.grid-item:nth-child(84) {
+  background-color: rgba(129, 252, 223, 0.6);
+}
+
+.grid-item:nth-child(85) {
+  background-color: rgba(101, 248, 35, 0.2);
+}
+
+.grid-item:nth-child(86) {
+  background-color: #e88805;
+}
+
+.grid-item:nth-child(87) {
+  background-color: rgba(140, 121, 100, 0.7);
+}
+
+.grid-item:nth-child(88) {
+  background-color: rgba(95, 254, 62, 0.2);
+}
+
+.grid-item:nth-child(89) {
+  background-color: rgba(144, 198, 91, 0.8);
+}
+
+.grid-item:nth-child(90) {
+  background-color: rgba(146, 38, 119, 0.5);
+}
+
+.grid-item:nth-child(91) {
+  background-color: rgba(23, 107, 158, 0.5);
+}
+
+.grid-item:nth-child(92) {
+  background-color: rgba(193, 7, 57, 0.9);
+}
+
+.grid-item:nth-child(93) {
+  background-color: rgba(210, 199, 137, 0.3);
+}
+
+.grid-item:nth-child(94) {
+  background-color: rgba(180, 59, 217, 0.3);
+}
+
+.grid-item:nth-child(95) {
+  background-color: rgba(31, 119, 86, 0.1);
+}
+
+.grid-item:nth-child(96) {
+  background-color: rgba(24, 15, 36, 0.6);
+}
+
+.grid-item:nth-child(97) {
+  background-color: rgba(118, 97, 254, 0.6);
+}
+
+.grid-item:nth-child(98) {
+  background-color: rgba(127, 192, 248, 0.8);
+}
+
+.grid-item:nth-child(99) {
+  background-color: rgba(3, 124, 174, 0.7);
+}
+
+.controls {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  padding: 10px;
+  background: rgba(40, 180, 200, 0.8);
+  border: 2px solid black;
+  border-radius: 40px/40px;
+}
+.controls a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+.controls a:hover {
+  color: black;
+}

@@ -1,0 +1,26 @@
+extends layout
+
+block content
+  h2 Bienvenido a la TRENDS Meli
+  p Ingrese un Sitio y la cantidad de filas y columnas de ese sitio
+  p Opcionalmente puede elegir una subcategoria de ese sitio
+  form(action='/trends', method='get')
+    li Sitio:
+      select#sites(name='site',required, onchange='getCategories()')
+        option(selected='', disabled='', hidden='', value='') Elija Sitio
+        each site in sites
+          option(value=site) #{site.name}
+    li Categoria (Opcional):
+      select#categories(name='category')
+        option(value='') Seleccion Categoria
+    li Columnas:
+      select#columns(name='columns',required)
+        option(value=3) 3
+        option(value=4) 4
+        option(value=5) 5
+    li Filas:
+      select#rows(name='rows',required)
+        option(value=3) 3
+        option(value=4) 4
+        option(value=5) 5
+    input(type='submit')

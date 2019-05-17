@@ -1,0 +1,9 @@
+extends layout
+block content
+    h1 TRENDS
+    h1 TRENDS SITIO #{site.name}
+    -for (var i = 0; i < rows; i++)
+        .row
+            -for (var j = 0; j < columns; j++)
+                .col-md-2
+                    p #{trends[j+i*(columns)].keyword}
